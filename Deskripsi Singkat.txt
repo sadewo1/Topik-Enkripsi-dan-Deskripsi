@@ -1,0 +1,1 @@
+Repository ini berisi contoh dan penjelasan dasar mengenai enkripsi dan dekripsi, ditujukan untuk pembelajaran keamanan siber dan kriptografi. Semua contoh aman untuk dijalankan secara lokal dan tidak digunakan untuk aktivitas ilegal.
