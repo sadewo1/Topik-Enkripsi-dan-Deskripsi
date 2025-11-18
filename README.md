@@ -1,3 +1,4 @@
+
 # Topik-Enkripsi-dan-Deskripsi
 Topik ini buat pembelajaran soal keamanan siber dalam serangan Ransomware 
 
@@ -53,3 +54,21 @@ Contoh enkripsi AES sederhana
 Cara membuat RSA keypair
 
 Demonstrasi enkripsi/dekripsi file kecil untuk praktik 
+
+Contoh Implementasi di Python
+
+# Contoh sederhana Caesar Cipher
+def encrypt(text, key):
+    return ''.join(chr((ord(c) - 65 + key) % 26 + 65) if c.isupper() else c for c in text)
+
+def decrypt(cipher, key):
+    return ''.join(chr((ord(c) - 65 - key) % 26 + 65) if c.isupper() else c for c in cipher)
+
+plaintext = "HELLO"
+key = 3
+
+ciphertext = encrypt(plaintext, key)
+print("Ciphertext:", ciphertext)
+
+decrypted = decrypt(ciphertext, key)
+print("Decrypted:", decrypted)
